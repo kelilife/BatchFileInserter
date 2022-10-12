@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace KeLi.BatchFileInserter.App
+namespace KeLi.BatchFileInserter
 {
     public static class Program
     {

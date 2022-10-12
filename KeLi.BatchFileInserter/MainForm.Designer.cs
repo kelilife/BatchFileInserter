@@ -1,4 +1,4 @@
-﻿namespace KeLi.BatchFileInserter.App
+﻿namespace KeLi.BatchFileInserter
 {
     partial class MainForm
     {

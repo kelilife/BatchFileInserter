@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace KeLi.BatchFileInserter.App
+namespace KeLi.BatchFileInserter
 {
     public partial class MainForm : Form
     {
-        private string[] _filePaths;
+        private string[] filePaths;
 
         public MainForm()
         {
@@ -18,14 +18,14 @@ namespace KeLi.BatchFileInserter.App
         private void BtnSelect_Click(object sender, EventArgs e)
         {
             if (ofdPat.ShowDialog() == DialogResult.OK)
-                _filePaths = ofdPat.FileNames;
+                filePaths = ofdPat.FileNames;
         }
 
         private void BtnStart_Click(object sender, EventArgs e)
         {
             try
             {
-                if (_filePaths == null || _filePaths.Length == 0)
+                if (filePaths == null || filePaths.Length == 0)
                 {
                     MessageBox.Show("Please select files!");
 
@@ -34,7 +34,7 @@ namespace KeLi.BatchFileInserter.App
                     return;
                 }
 
-                foreach (var filePath in _filePaths)
+                foreach (var filePath in filePaths)
                 {
                     var context = File.ReadAllLines(filePath, Encoding.Default);
 
