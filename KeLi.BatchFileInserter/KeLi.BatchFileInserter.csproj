@@ -7,7 +7,7 @@
     <ProjectGuid>{B975AFA2-F778-499A-88EA-85B5C286C52D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>KeLi.BatchFileInserter</RootNamespace>
-    <AssemblyName>KeLi.BatchFileInserter</AssemblyName>
+    <AssemblyName>BatchFileInserter</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
